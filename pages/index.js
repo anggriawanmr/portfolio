@@ -1,11 +1,13 @@
 import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react';
 
+import Section from '../components/section';
+
 const Page = () => {
   return (
     <Container>
       <Box
         borderRadius="lg"
-        bg={useColorModeValue('')}
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         p={3}
         mb={6}
         align="center"
@@ -20,6 +22,12 @@ const Page = () => {
         </Heading>
         <p>Web Developer</p>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>
     </Container>
   );
 };
