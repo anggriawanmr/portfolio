@@ -1,6 +1,17 @@
-import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import {
+  Button,
+  Container,
+  Box,
+  Heading,
+  useColorModeValue,
+  Link,
+} from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
 
 import Section from '../components/section';
+import Paragraph from '../components/paragraph';
+import { BioSection, BioYear } from '../components/bio';
 
 const Page = () => {
   return (
@@ -26,7 +37,38 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>
+          Anggriawan is Web Developer and Experienced Customer Service
+          Representative and doing web designing for{' '}
+          <NextLink href="https://www.wwpconstruction.com/">
+            <Link>Wahana Wira Persada</Link>
+          </NextLink>
+          .
+        </Paragraph>
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} coloraScheme="teal">
+              My Portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1994</BioYear>
+          Born in Jakarta, Indonesia.
+        </BioSection>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          Completed Bachelor Degree of Computer Science in BINUS University
+        </BioSection>
+        <BioSection>
+          <BioYear>2015</BioYear>
+          Worked at Keywords Studios
+        </BioSection>
       </Section>
     </Container>
   );
