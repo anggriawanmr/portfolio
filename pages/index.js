@@ -26,20 +26,21 @@ const Page = () => {
         Hello, I&apos;m a full-stack developer based in Indonesia!
       </Box>
 
-      <Box display={{ md: 'flex' }}>
+      <Box display={{ xs: 'flex' }} mb={10}>
         <Box flexGrow={1}></Box>
         <Heading as="h2" variant="page-title">
           Anggriawan Ridatama
         </Heading>
-        <p>Web Developer</p>
+        <p>Web Developer and Experienced Customer Service Representative</p>
       </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
           Anggriawan is Web Developer and Experienced Customer Service
-          Representative and doing web designing for{' '}
+          Representative, passionate on doing web design and learning full-stack
+          development, currently he designing website for{' '}
           <NextLink href="https://www.wwpconstruction.com/">
             <Link>Wahana Wira Persada</Link>
           </NextLink>
@@ -59,7 +60,7 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>1994</BioYear>
-          Born in Jakarta, Indonesia.
+          Born in Malang, Indonesia.
         </BioSection>
         <BioSection>
           <BioYear>2016</BioYear>
@@ -67,7 +68,11 @@ const Page = () => {
         </BioSection>
         <BioSection>
           <BioYear>2015</BioYear>
-          Worked at Keywords Studios
+          Worked at Keywords Studios as a Customer Service Representative
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Worked at Wahana Wira Persada as a Web Developer
         </BioSection>
       </Section>
     </Container>
