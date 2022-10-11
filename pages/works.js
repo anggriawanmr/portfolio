@@ -2,20 +2,34 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
+import thumbnailDashboard from '../public/images/works/dashboard.png';
+import thumbUniswapClone from '../public/images/works/uniswap-clone.png';
 
 const Works = () => {
   return (
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Works
+      <Heading as="h3" fontSize={20} mb={5} mt={5}>
+        Projects
       </Heading>
+
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
             id="dashboard"
-            title="dashboard"
-            thumbnail=""
-          ></WorkGridItem>
+            title="Dashboard"
+            thumbnail={thumbnailDashboard}
+          >
+            A Dashboard application
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="uniswap-clone"
+            title="Uniswap Clone"
+            thumbnail={thumbUniswapClone}
+          >
+            Uniswap Clone
+          </WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>
