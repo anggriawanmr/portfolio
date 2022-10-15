@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallBack, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Box, Spinner } from '@chakra-ui/react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -24,6 +24,16 @@ const VoxelRobot = () => {
   );
   const [scene] = useState(new THREE.Scene());
   const [_controls, setControls] = useState();
+
+  const handleWindowResize = useCallback(() => {
+    const { current: container } = refContainer;
+    if (container && renderer) {
+      const scW = container.clientWidth;
+      const scH = container.clientHeight;
+
+      renderer.setSize(scW, scH);
+    }
+  }, [renderer]);
 
   /*eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -104,12 +114,19 @@ const VoxelRobot = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize, false);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, [renderer, handleWindowResize]);
+
   return (
     <Box
       ref={refContainer}
       className="voxel-dog"
       m="auto"
-      at={['-20px', '-60px', '-120px']}
+      mt={['-20px', '-60px', '-120px']}
       mb={['-40px', '-140px', '-200px']}
       w={[280, 480, 640]}
       position="relative"
