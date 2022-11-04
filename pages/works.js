@@ -3,7 +3,7 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
-import thumbnailDashboard from '../public/images/works/dashboard.png';
+import thumbnailDashboard from '../public/images/works/dashboard_01.png';
 import thumbUniswapClone from '../public/images/works/uniswap-clone.png';
 
 const Works = () => {

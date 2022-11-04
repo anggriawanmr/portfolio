@@ -124,7 +124,7 @@ const VoxelRobot = () => {
   return (
     <Box
       ref={refContainer}
-      className="voxel-dog"
+      className="voxel-robot"
       m="auto"
       mt={['-20px', '-60px', '-120px']}
       mb={['-40px', '-140px', '-200px']}
