@@ -7,31 +7,33 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Dashboard">
+    <Layout title="Uniswap">
       <Container>
         <Title>
-          Dashboard <Badge>2022</Badge>
+          Uniswap <Badge>2022</Badge>
         </Title>
         <P>
-          A Dashboard application containing Dashboard, Three Pages, Four Apps,
-          and 7 Functional Charts using help of syncfusion
+          A decentralized cryptocurrency exchange React application with
+          metamask pairing, live smart contract data fetching, and most
+          importantly, the ability to create your own ERC20 tokens, swap them
+          and more!
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://dashboard-syncfus-anggriawanmr.netlify.app/">
-              https://dashboard-syncfus-anggriawanmr.netlify.app/
+            <Link href="https://uniswap-clone-anggriawanmr.netlify.app/">
+              https://uniswap-clone-anggriawanmr.netlify.app/
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stacks</Meta>
-            <span>React, React Context API, Syncfusion</span>
+            <span>React, Smart Contract, Tailwind, Cranq, Blockchains</span>
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/dashboard_01.png" alt="Dashboard" />
-        <WorkImage src="/images/works/dashboard_02.png" alt="Dashboard" />
+        <WorkImage src="/images/works/uniswap_01.png" alt="Dashboard" />
+        <WorkImage src="/images/works/uniswap_02.png" alt="Dashboard" />
       </Container>
     </Layout>
   );

@@ -4,7 +4,7 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 import thumbnailDashboard from '../public/images/works/dashboard_01.png';
-import thumbUniswapClone from '../public/images/works/uniswap-clone.png';
+import thumbUniswapClone from '../public/images/works/uniswap_01.png';
 
 const Works = () => {
   return (
@@ -26,7 +26,7 @@ const Works = () => {
           </Section>
           <Section delay={0.1}>
             <WorkGridItem
-              id="uniswap-clone"
+              id="uniswap"
               title="Uniswap Clone"
               thumbnail={thumbUniswapClone}
             >
