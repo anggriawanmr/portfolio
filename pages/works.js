@@ -6,6 +6,7 @@ import { WorkGridItem } from '../components/grid-item';
 import thumbnailDashboard from '../public/images/works/dashboard_01.png';
 import thumbUniswapClone from '../public/images/works/uniswap_01.png';
 import thumbYoutubeClone from '../public/images/works/youtube_01.png';
+import thumbTiktokClone from '../public/images/works/tiktik_01.png';
 
 const Works = () => {
   return (
@@ -41,6 +42,15 @@ const Works = () => {
               thumbnail={thumbYoutubeClone}
             >
               A Youtube Clone
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="tiktik"
+              title="Tiktok Clone"
+              thumbnail={thumbTiktokClone}
+            >
+              A Tiktok Clone
             </WorkGridItem>
           </Section>
         </SimpleGrid>
