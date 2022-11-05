@@ -5,6 +5,7 @@ import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 import thumbnailDashboard from '../public/images/works/dashboard_01.png';
 import thumbUniswapClone from '../public/images/works/uniswap_01.png';
+import thumbYoutubeClone from '../public/images/works/youtube_01.png';
 
 const Works = () => {
   return (
@@ -30,7 +31,16 @@ const Works = () => {
               title="Uniswap Clone"
               thumbnail={thumbUniswapClone}
             >
-              Uniswap Clone
+              A Uniswap Clone
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="youtube"
+              title="Youtube Clone"
+              thumbnail={thumbYoutubeClone}
+            >
+              A Youtube Clone
             </WorkGridItem>
           </Section>
         </SimpleGrid>
