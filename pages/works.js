@@ -8,6 +8,7 @@ import thumbUniswapClone from '../public/images/works/uniswap_01.png';
 import thumbYoutubeClone from '../public/images/works/youtube_01.png';
 import thumbTiktokClone from '../public/images/works/tiktik_01.png';
 import thumbEcommerce from '../public/images/works/ecommerce_01.png';
+import thumbMernMemories from '../public/images/works/mernmemories_01.png';
 
 const Works = () => {
   return (
@@ -61,6 +62,15 @@ const Works = () => {
               thumbnail={thumbEcommerce}
             >
               An Ecommerce
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="mernmemories"
+              title="Mern Memories"
+              thumbnail={thumbMernMemories}
+            >
+              A full stack social media app
             </WorkGridItem>
           </Section>
         </SimpleGrid>
