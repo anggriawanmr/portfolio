@@ -7,6 +7,7 @@ import thumbnailDashboard from '../public/images/works/dashboard_01.png';
 import thumbUniswapClone from '../public/images/works/uniswap_01.png';
 import thumbYoutubeClone from '../public/images/works/youtube_01.png';
 import thumbTiktokClone from '../public/images/works/tiktik_01.png';
+import thumbEcommerce from '../public/images/works/ecommerce_01.png';
 
 const Works = () => {
   return (
@@ -51,6 +52,15 @@ const Works = () => {
               thumbnail={thumbTiktokClone}
             >
               A Tiktok Clone
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="ecommerce"
+              title="Ecommerce"
+              thumbnail={thumbEcommerce}
+            >
+              An Ecommerce
             </WorkGridItem>
           </Section>
         </SimpleGrid>
