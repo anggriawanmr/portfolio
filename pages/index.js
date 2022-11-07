@@ -6,13 +6,24 @@ import {
   Heading,
   useColorModeValue,
   Link,
+  SimpleGrid,
+  List,
+  ListItem,
+  Icon,
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord,
+} from 'react-icons/io5';
 
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
+import { GridItem } from '../components/grid-item';
 
 const Page = () => {
   return (
@@ -76,6 +87,24 @@ const Page = () => {
             <BioYear>2022</BioYear>
             Worked at Wahana Wira Persada as a Web Developer
           </BioSection>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/anggriawanmr" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<icon as={IoLogoGithub} />}
+                >
+                  Github
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
