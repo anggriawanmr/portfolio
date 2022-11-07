@@ -12,12 +12,7 @@ import {
   Icon,
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import {
-  IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoDiscord,
-} from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
 
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
@@ -98,9 +93,36 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<icon as={IoLogoGithub} />}
+                  leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  Github
+                  anggriawanmr
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link href="https://twitter.com/anggriawanmr" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @anggriawanmr
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link
+                href="https://www.instagram.com/anggriawanmr/?hl=en"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @anggriawanmr
                 </Button>
               </Link>
             </ListItem>
