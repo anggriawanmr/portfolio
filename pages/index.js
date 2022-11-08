@@ -75,7 +75,7 @@ const Page = () => {
             Completed Bachelor Degree of Computer Science in BINUS University
           </BioSection>
           <BioSection>
-            <BioYear>2015</BioYear>
+            <BioYear>2016</BioYear>
             Worked at Keywords Studios as a Customer Service Representative
           </BioSection>
           <BioSection>
