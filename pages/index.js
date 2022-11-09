@@ -18,7 +18,6 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
-import { GridItem } from '../components/grid-item';
 
 const Page = () => {
   return (
@@ -49,9 +48,13 @@ const Page = () => {
             Anggriawan is Web Developer and Experienced Customer Service
             Representative, passionate on doing web design and learning
             full-stack development, currently he designing website for{' '}
-            <NextLink href="https://www.wwpconstruction.com/">
-              <Link>Wahana Wira Persada</Link>
-            </NextLink>
+            <Link
+              href="https://www.wwpconstruction.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Wahana Wira Persada
+            </Link>
             .
           </Paragraph>
           <Box align="center" my={4}>
