@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Box, Spinner } from '@chakra-ui/react';
 
+/* eslint-disable react/display-name */
 export const RobotSpinner = () => (
   <Spinner
     size="xl"
@@ -34,7 +35,5 @@ const Loader = () => {
     </RobotContainer>
   );
 };
-
-Loader.displayName = 'Loader';
 
 export default Loader;
