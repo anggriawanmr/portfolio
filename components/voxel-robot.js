@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Box, Spinner } from '@chakra-ui/react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -46,7 +45,7 @@ const VoxelRobot = () => {
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0);
+      const target = new THREE.Vector3(-1, 1.2, 0);
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
