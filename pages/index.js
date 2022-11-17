@@ -98,7 +98,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  anggriawanmr
+                  @anggriawanmr
                 </Button>
               </Link>
             </ListItem>
