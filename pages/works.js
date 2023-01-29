@@ -12,6 +12,7 @@ import thumbMernMemories from '../public/images/works/mernmemories_01.png';
 import thumbLyriks from '../public/images/works/lyriks_02.png';
 import thumbNftCard from '../public/images/works/nft-card_01.png';
 import thumbMetaversus from '../public/images/works/metaversus_01.png';
+import thumbCrowdfunding from '../public/images/works/crowdfunding_01.png';
 
 const Works = () => {
   return (
@@ -22,6 +23,15 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="crowdfunding"
+              title="Crowdfunding App"
+              thumbnail={thumbCrowdfunding}
+            >
+              Crowdfunding Application
+            </WorkGridItem>
+          </Section>
           <Section delay={0.1}>
             <WorkGridItem
               id="metaversus"
