@@ -10,6 +10,7 @@ import thumbTiktokClone from '../public/images/works/tiktik_01.png';
 import thumbEcommerce from '../public/images/works/ecommerce_01.png';
 import thumbMernMemories from '../public/images/works/mernmemories_01.png';
 import thumbLyriks from '../public/images/works/lyriks_02.png';
+import thumbNftCard from '../public/images/works/nft-card_01.png';
 
 const Works = () => {
   return (
@@ -20,6 +21,15 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="nft-card"
+              title="NFT Card Game"
+              thumbnail={thumbNftCard}
+            >
+              A Web3 NFT Game
+            </WorkGridItem>
+          </Section>
           <Section delay={0.1}>
             <WorkGridItem id="lyriks" title="Lyriks" thumbnail={thumbLyriks}>
               A Spotify Clone
