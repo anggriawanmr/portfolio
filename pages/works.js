@@ -14,6 +14,7 @@ import thumbNftCard from '../public/images/works/nft-card_01.png';
 import thumbMetaversus from '../public/images/works/metaversus_01.png';
 import thumbCrowdfunding from '../public/images/works/crowdfunding_01.png';
 import thumbOpenai from '../public/images/works/openai-clone_01.png';
+import thumbDalle from '../public/images/works/dalle-clone_01.png';
 
 const Works = () => {
   return (
@@ -24,6 +25,15 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="dalle-clone"
+              title="DallE Clone"
+              thumbnail={thumbDalle}
+            >
+              DallE Clone
+            </WorkGridItem>
+          </Section>
           <Section delay={0.1}>
             <WorkGridItem
               id="openai-clone"

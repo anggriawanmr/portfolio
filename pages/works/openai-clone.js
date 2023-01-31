@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Crowdfunding">
+    <Layout title="OpenAI Clone">
       <Container>
         <Title>
           OpenAI Clone <Badge>2023</Badge>
