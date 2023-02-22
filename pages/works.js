@@ -28,8 +28,8 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <WorkGridItem
-              id="dalle-clone"
-              title="DallE Clone"
+              id="refine_dashboard"
+              title="Refine Dashboard"
               thumbnail={thumbRefineMERN}
             >
               MERN Dashboard application
