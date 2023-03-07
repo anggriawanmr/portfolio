@@ -45,9 +45,12 @@ const Page = () => {
             About
           </Heading>
           <Paragraph>
-            Anggriawan is Web Developer and Experienced Customer Service
-            Representative, passionate on doing web design and learning
-            full-stack development, currently he designing website for{' '}
+            Full-stack developer with a passion for creating clean, efficient,
+            and scalable web applications. Experienced in using a variety of
+            technologies, including React, Node.js, and PHP, to build dynamic
+            and engaging user experiences. Always looking to learn and grow as a
+            developer, and constantly seeking out new challenges and
+            opportunities to improve my skills, currently designing website for{' '}
             <Link
               href="https://www.wwpconstruction.com/"
               rel="noopener noreferrer"
