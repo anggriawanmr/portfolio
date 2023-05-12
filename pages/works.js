@@ -29,8 +29,8 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <WorkGridItem
-              id="refine_dashboard"
-              title="Refine Dashboard"
+              id="threejs_cloth"
+              title="Threejs Cloth Website"
               thumbnail={thumbThreeCloth}
             >
               Threejs Cloth Website
