@@ -17,6 +17,7 @@ import thumbOpenai from '../public/images/works/openai-clone_01.png';
 import thumbDalle from '../public/images/works/dalle-clone_01.png';
 import thumbRefineMERN from '../public/images/works/refine_dashboard_01.png';
 import thumbThreeCloth from '../public/images/works/threecloth_01.png';
+import thumbSummarizer from '../public/images/works/summarizer_01.png';
 
 const Works = () => {
   return (
@@ -29,7 +30,16 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <WorkGridItem
-              id="threejs_cloth"
+              id="summarizer"
+              title="Summarizer"
+              thumbnail={thumbSummarizer}
+            >
+              Article AI Summarizer
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="threecloth"
               title="Threejs Cloth Website"
               thumbnail={thumbThreeCloth}
             >
