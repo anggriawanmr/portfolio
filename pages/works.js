@@ -18,6 +18,7 @@ import thumbDalle from '../public/images/works/dalle-clone_01.png';
 import thumbRefineMERN from '../public/images/works/refine_dashboard_01.png';
 import thumbThreeCloth from '../public/images/works/threecloth_01.png';
 import thumbSummarizer from '../public/images/works/summarizer_01.png';
+import nftThumbnail from '../public/images/works/nftflux_01.png';
 
 const Works = () => {
   return (
@@ -28,6 +29,15 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="nftflux"
+              title="NFT Flux"
+              thumbnail={nftThumbnail}
+            >
+              NFT Flux
+            </WorkGridItem>
+          </Section>
           <Section delay={0.1}>
             <WorkGridItem
               id="summarizer"
