@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Crowdfunding">
+    <Layout title="NFT Flux">
       <Container>
         <Title>
           NFT Flux <Badge>2023</Badge>
@@ -27,8 +27,8 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/nftflux_01" alt="Crowdfunding" />
-        <WorkImage src="/images/works/nftflux_02" alt="Crowdfunding" />
+        <WorkImage src="/images/works/nftflux_01.png" alt="NFT Flux" />
+        <WorkImage src="/images/works/nftflux_02.png" alt="NFT Flux" />
       </Container>
     </Layout>
   );

@@ -19,6 +19,7 @@ import thumbRefineMERN from '../public/images/works/refine_dashboard_01.png';
 import thumbThreeCloth from '../public/images/works/threecloth_01.png';
 import thumbSummarizer from '../public/images/works/summarizer_01.png';
 import nftThumbnail from '../public/images/works/nftflux_01.png';
+import promptThumbnail from '../public/images/works/promptopia_01.png';
 
 const Works = () => {
   return (
@@ -29,6 +30,15 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="promptopia"
+              title="Promptopia"
+              thumbnail={promptThumbnail}
+            >
+              Promptopia
+            </WorkGridItem>
+          </Section>
           <Section delay={0.1}>
             <WorkGridItem
               id="nftflux"

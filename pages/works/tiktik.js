@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Tiktik">
+    <Layout title="Tiktok Clone">
       <Container>
         <Title>
           Tiktik <Badge>2022</Badge>

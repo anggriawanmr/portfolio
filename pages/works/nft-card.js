@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Dashboard">
+    <Layout title="NFT Card">
       <Container>
         <Title>
           NFT Card Game <Badge>2022</Badge>

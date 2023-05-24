@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Dashboard">
+    <Layout title="Metaversus">
       <Container>
         <Title>
           Metaversus <Badge>2023</Badge>

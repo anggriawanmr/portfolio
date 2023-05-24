@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Crowdfunding">
+    <Layout title="Three D Cloth">
       <Container>
         <Title>
           Threejs Cloth Website <Badge>2023</Badge>
